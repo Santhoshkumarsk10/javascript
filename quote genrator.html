@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>
+quote genrator
+</title>
+</head>
+<script>
+var txt=['It\'s not about ideas. It’s about making ideas happen.','Always deliver more than expected.',
+'The most courageous act is still to think for yourself. Aloud.','What would you do if you were not afraid?',
+'Nothing will work unless you do.']
+function genrate()
+{
+	var	ranno=Math.floor(Math.random()*(txt.length));
+	document.getElementById('quote').innerHTML=txt[ranno];
+}
+</script>
+<body>
+<div id="quote">
+</div>
+<input type="button" value="Click" onclick="genrate()">
+</body>
+</html>
